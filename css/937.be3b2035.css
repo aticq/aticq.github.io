@@ -30,6 +30,7 @@
 .s2_1w9HR {
     display: flex;
     align-items: center;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
 }
 
 
