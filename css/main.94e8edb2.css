@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+:root {
+  --font-family-main: 'Inter', 'Times New Roman', serif;
+  --font-size-s: 12px;
+  --font-line-s: 20px;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --font-size-xl: 32px;
+  --font-line-xl: 40px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+  --navbar-height: 50px;
+  --sidebar-width: 300px;
+  --sidebar-width-collapsed: 80px;
+  --modal-z-index: 1000;
+  --overlay-z-index: 100;
+  --overlay-color: rgba(0 0 0 / 60%);
+  --red-light: #f00;
+  --red-dark: #ce0505;
+}
+
+:root {
+  --bg-color: #000;
+  --inverted-bg-color: #313131;
+  --primary-color: #eee;
+  --secondary-color: #9e9e9e;
+  --inverted-primary-color: #04ff04;
+  --inverted-secondary-color: #049604;
+  --dark-bg-redesigned: #fff;
+  --bg-redesigned: #eff5f6;
+  --light-bg-redesigned: #e2eef1;
+  --text-redesigned: #141c1f;
+  --hint-redesigned: #adbcc0;
+  --cancel-redesigned: #f77;
+  --save-redesigned: #62de85;
+  --icon-redesigned: #5ed3f3;
+  --accent-redesigned: #00c8ff;
+  --skeleton-color: #fff;
+  --skeleton-shadow: rgba(0 0 0 / 20%);
+  --code-bg: #fff;
+  --card-bg: #d5d5d7;
+  --listbox-bg: #d5d5d7;
+}
+
+.app_dark_theme {
+  --bg-color: #090949;
+  --inverted-bg-color: #e8e8ea;
+  --primary-color: #04ff04;
+  --secondary-color: #049604;
+  --inverted-primary-color: #0232c2;
+  --inverted-secondary-color: #0452ff;
+  --dark-bg-redesigned: #090f11;
+  --bg-redesigned: #0c1214;
+  --light-bg-redesigned: #151c1f;
+  --text-redesigned: #dbdbdb;
+  --hint-redesigned: #555;
+  --cancel-redesigned: #d95757;
+  --save-redesigned: #6cd98b;
+  --icon-redesigned: #74a2b2;
+  --accent-redesigned: #5ed3f3;
+  --skeleton-color: #1515ad;
+  --skeleton-shadow: #2b2be8;
+  --code-bg: #1212a1;
+  --card-bg: #0d0d6b;
+  --listbox-bg: #0d0d6b;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Thin.ttf) format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraLight.ttf)
+    format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold.ttf)
+    format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.app {
+  font: var(--font-m);
+  color: var(--primary-color);
+  background: var(--bg-color);
+}
+
+.content-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-page {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .content-page {
+    padding: 15px 10%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-page {
+    padding: 150px 20%;
+  }
+}
+
+
+
+.iSByeBxC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-l);
+  height: 100%;
+}
+
+.nOdxBcoU {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
