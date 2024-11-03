@@ -73,6 +73,13 @@
     background-color: var( --inverted-bg-color);
 }
 
+.eRwlLqRC {
+    width: var(--container-max-width);
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+}
+
 .rj5IrKPu {
     display: flex;
     flex-wrap: wrap;
