@@ -1,14 +1,15 @@
 .OXN7l0Su {
     display: flex;
+    width: 100%;
     max-width: var(--container-max-width);
     height: 180px;
     justify-content: space-between;
 }
 
 .WwoQWBLq {
-    flex: 0 0 180px;
     height: 180px;
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
@@ -32,7 +33,7 @@
     margin-left: 4px;
     background-color: #120F0B;
     height: 100%;
-    width: 180px;
+    flex: 1;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -147,6 +148,6 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 15;
 }
 
